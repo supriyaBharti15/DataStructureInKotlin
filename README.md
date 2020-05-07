@@ -34,4 +34,19 @@ var splitMessage: List<String>
         for (i: String in splitMessage)
             println(i)
 ```
+## ArrayList<> | List<>
+```kotlin
+val dataList = ArrayList<String>() // define a Arraylist
+        dataList.add("Supriya")
+        dataList.add("India")
+        dataList.add("USA") // added ={Supriya,India,USA}
+```
+```Kotlin
+//replace any value bu position
+        dataList[0] = "Hindustan"  // Output :- {Hindustan,India,USA}
+```
+```kotlin 
+for (name :String in dataList) //itreate the list
+            println("NAme are :: $name")
+```
 
