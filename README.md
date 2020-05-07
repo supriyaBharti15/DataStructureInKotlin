@@ -49,4 +49,25 @@ val dataList = ArrayList<String>() // define a Arraylist
 for (name :String in dataList) //itreate the list
             println("NAme are :: $name")
 ```
+```kotlin
+/ iterate a list till a specific position
+        for(pos:Int in 0 until 2)
+            println("Data : ${dataList[pos]}  position :: $pos") //Output : Hindustan  position :: 0 ,  India  position :: 1
+```
+## HashMap | map
+```kotlin
+ val dataMap = HashMap<Int,String>() // declear the map
+        dataMap.set(12,"India")
+        dataMap.set(42,"Raja")
+        dataMap.set(41,"supriya")
+        dataMap.set(89,"ankit") // adding data to map
+```
+```kotlin
+ for (data : String in dataMap.values)
+            println("Value == $data") // it will print all map value
+```
+```kotlin
+ for (data : Map.Entry<Int,String> in dataMap)
+            println("Key == ${data.key} Value == ${data.value}") //Output == Key == 41 Value == supriya, Key == 89 Value == ankit,Key == 42 Value == Raja..
 
+```
